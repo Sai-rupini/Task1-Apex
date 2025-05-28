@@ -14,8 +14,8 @@ Create a simple, responsive webpage that includes:
 - JavaScript (Vanilla JS)
 
 ## 📽 Demo Video:
-▶ [Watch Task-1 demo video on LinkedIn](https://www.linkedin.com/in/YOURUSERNAME/)  
-(Replace with your actual video link after uploading)
+▶ [Watch Task-1 demo video on LinkedIn](https://www.linkedin.com/in/sairupini-chitikesi-4812762b7/)  
+
 
 ## 🧠 What I Learned:
 - Structuring HTML elements semantically
@@ -23,4 +23,4 @@ Create a simple, responsive webpage that includes:
 - Adding basic interactivity with JavaScript
 
 ## 🔗 Connect with Me:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/YOURUSERNAME/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/sairupini-chitikesi-4812762b7/)
