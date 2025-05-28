@@ -1,120 +1,154 @@
-/* General body styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4; /* Light gray background */
-    color: #333; /* Dark gray text color */
-    line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #0d1117;
+  color: #c9d1d9;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
 }
 
-/* Header styling */
-h1 {
-    color: #336699; /* A pleasant blue */
-    text-align: center;
-    margin-bottom: 30px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #ccc; /* Subtle line under the heading */
+.container {
+  max-width: 900px;
+  background: #161b22;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+  overflow: hidden;
+  padding: 2rem 3rem;
 }
 
-/* Paragraph styling */
-/* We'll adjust general p styles below if needed, but focus on the p inside the flex container */
-p {
-    background-color: #e0f2f7; /* Light blue background for paragraphs */
-    padding: 15px;
-    border-radius: 8px; /* Slightly rounded corners */
-    margin-bottom: 20px; /* Keep general paragraph spacing */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-
-/* Image styling - Adjusting for smaller size and flexbox */
-img {
-    max-width: 250px; /* Set a maximum width for the image */
-    height: auto;     /* Maintain aspect ratio */
-    border: 3px solid #66b2b2; /* Teal border */
-    border-radius: 5px;
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.2); /* More prominent shadow */
-    /* Removed margin: 0 auto as flexbox will handle alignment */
+header h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #58a6ff;
+  margin-bottom: 0.3rem;
 }
 
-/* Link styling */
-a {
-    color: #007bff; /* Standard blue for links */
-    text-decoration: none; /* Removes default underline */
-    font-weight: bold;
+header p {
+  font-size: 1.2rem;
+  color: #8b949e;
 }
 
-a:hover {
-    text-decoration: underline; /* Adds underline on hover for better user experience */
-    color: #0056b3; /* Darker blue on hover */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
-/* Button styling */
-#interactiveButton {
-    display: block; /* Make the button a block element */
-    width: 200px; /* Fixed width */
-    margin: 30px auto; /* Center the button and add margin */
-    padding: 15px 25px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white; /* White text color */
-    background-color: #28a745; /* Green background */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer; /* Changes cursor to a pointer on hover */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow for the button */
+button {
+  background: #238636;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(35, 134, 54, 0.6);
+  transition: background-color 0.3s ease;
 }
 
-#interactiveButton:hover {
-    background-color: #218838; /* Darker green on hover */
-    transform: translateY(-2px); /* Lifts the button slightly on hover */
+button:hover {
+  background: #2ea043;
 }
 
-#interactiveButton:active {
-    background-color: #1e7e34; /* Even darker green when clicked */
-    transform: translateY(0); /* Pushes the button down slightly when active */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Smaller shadow when active */
+button.active {
+  background: #54d62c;
+  box-shadow: 0 8px 25px rgba(84, 214, 44, 0.8);
 }
 
-/* NEW FLEXBOX STYLES FOR IMAGE AND TEXT CONTAINER */
-.image-text-container {
-    display: flex; /* Make this a flex container */
-    align-items: center; /* Vertically centers items if they have different heights */
-    justify-content: space-between; /* Pushes items to the ends, or use space-around, space-evenly */
-    margin-bottom: 30px; /* Add some space below the container */
-    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
-    background-color: #f7f7f7; /* Slightly different background for the container */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.content {
+  background: #0d1117;
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  box-shadow: inset 0 0 15px #238636aa;
 }
 
-.image-text-container p {
-    flex: 1; /* Allows the paragraph to take up available space */
-    margin-right: 20px; /* Space between paragraph and image */
-    margin-bottom: 0; /* Remove bottom margin if inside flex container to prevent double spacing */
+h2 {
+  color: #39d353;
+  margin-top: 0;
 }
 
-/* Order the elements: Text (left) and Image (right) */
-.image-text-container p {
-    order: 1; /* Text comes first */
+pre {
+  background: #010409;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  box-shadow: 0 0 8px #238636bb;
+  margin: 1rem 0;
 }
 
-.image-text-container img {
-    order: 2; /* Image comes second */
+/* Interactive demo styles */
+.demo-box {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #161b22;
+  box-shadow: 0 4px 20px #238636cc;
+  color: #c9d1d9;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .image-text-container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: center; /* Center items when stacked */
-    }
+.demo-box p {
+  margin: 0 0 1rem;
+}
 
-    .image-text-container p {
-        margin-right: 0; /* Remove right margin when stacked */
-        margin-bottom: 20px; /* Add bottom margin to text when stacked */
-        text-align: center; /* Center text when stacked */
-    }
+/* HTML demo */
+.html-demo {
+  font-family: 'Courier New', Courier, monospace;
+  background: #0d1117;
+  padding: 1rem;
+  border: 1px solid #238636;
+  border-radius: 10px;
+  color: #39d353;
+}
+
+/* CSS demo */
+.css-demo-box {
+  width: 120px;
+  height: 120px;
+  background: #238636;
+  margin-top: 1rem;
+  border-radius: 12px;
+  transition: background-color 0.5s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* JS demo */
+.js-demo-btn {
+  background: #58a6ff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(88, 166, 255, 0.7);
+  transition: background-color 0.3s ease;
+}
+.js-demo-btn:hover {
+  background: #79b8ff;
+}
+.js-demo-msg {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #39d353;
+  min-height: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }

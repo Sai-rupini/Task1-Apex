@@ -1,30 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TASK-1</title>
-    <link rel="stylesheet" href="Task1.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Learn Web Technologies: HTML, CSS & JavaScript</title>
+<link rel="stylesheet" href="Task1.css" />
 </head>
 <body>
-    <h1>Welcome to webpage of Task-1!</h1>
-    <p>Hello everyone! This is a simple page I'm building to learn HTML, CSS, and JavaScript. I'm excited to see what I can create!</p>
 
-    <div class="image-text-container">
-        <p>This paragraph is related to the image on the right. I'm learning web development,and this image describes the main difference between HTML,CSS and Javascript.</p>
-        <img src="HtmlCssJs.png" >
+<div class="container">
+  <header>
+    <h1>Learn Web Technologies</h1>
+    <p>Interactive introduction to HTML, CSS, and JavaScript</p>
+  </header>
+
+  <div class="buttons" role="tablist">
+    <button id="btn-html" class="active" role="tab" aria-selected="true" aria-controls="panel-html">HTML</button>
+    <button id="btn-css" role="tab" aria-selected="false" aria-controls="panel-css">CSS</button>
+    <button id="btn-js" role="tab" aria-selected="false" aria-controls="panel-js">JavaScript</button>
+  </div>
+
+  <section id="panel-html" role="tabpanel" tabindex="0" aria-labelledby="btn-html" class="content" hidden>
+    <h2>HTML: Structure of the Web</h2>
+    <p>HTML (HyperText Markup Language) is the backbone of every webpage. It defines the structure and content like headings, paragraphs, images, and links.</p>
+    <pre><code>&lt;h1&gt;Welcome to My Site&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+</code></pre>
+
+    <div class="demo-box">
+      <p>Live HTML preview:</p>
+      <div class="html-demo" contenteditable="true" aria-label="Editable HTML preview">
+        &lt;h1&gt;Hello World!&lt;/h1&gt;
+      </div>
+      <small>Try editing this HTML snippet above!</small>
     </div>
+  </section>
 
-    <p>Check out my linkedin: <a href="https://www.linkedin.com/in/sairupini-chitikesi-4812762b7/"target="_blank">LinkedIn</a></p>
+  <section id="panel-css" role="tabpanel" tabindex="0" aria-labelledby="btn-css" class="content" hidden>
+    <h2>CSS: Styling the Web</h2>
+    <p>CSS (Cascading Style Sheets) controls how HTML elements look — colors, layouts, fonts, and animations.</p>
+    <pre><code>div.box {
+  width: 100px;
+  height: 100px;
+  background-color: #238636;
+  border-radius: 12px;
+}
+</code></pre>
 
-    <button id="interactiveButton">Click Me for a Surprise!</button>
+    <div class="demo-box">
+      <p>Interactive CSS box (click to change color):</p>
+      <div class="css-demo-box" tabindex="0" aria-label="Clickable colored box"></div>
+    </div>
+  </section>
 
-    <script>
-        const myButton = document.getElementById('interactiveButton');
-        myButton.addEventListener('click', function() {
-            alert('Task-1 is Completed!');
-        });
-    </script>
+  <section id="panel-js" role="tabpanel" tabindex="0" aria-labelledby="btn-js" class="content" hidden>
+    <h2>JavaScript: Adding Interactivity</h2>
+    <p>JavaScript lets you make webpages interactive, respond to user input, and manipulate page content dynamically.</p>
+    <pre><code>const btn = document.querySelector('button');
+btn.addEventListener('click', () =&gt; {
+  alert('Hello from JavaScript!');
+});
+</code></pre>
+
+    <div class="demo-box">
+      <p>Click the button below to see JavaScript in action:</p>
+      <button class="js-demo-btn" aria-label="JavaScript alert button">Click me!</button>
+      <div class="js-demo-msg" aria-live="polite"></div>
+    </div>
+  </section>
+</div>
+
+<script src="Task-1.js"></script>
 </body>
 </html>
-    
