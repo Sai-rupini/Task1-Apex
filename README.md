@@ -14,7 +14,7 @@ Create a simple, responsive webpage that includes:
 - JavaScript (Vanilla JS)
 
 ## 📽 Demo Video:
-▶ [Watch Task-1 demo video on LinkedIn]([https://www.linkedin.com/posts/sairupini-chitikesi_internship-webdevelopment-html-activity-7335307659753017345-xRkf?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEwJKiEB2JCMNkw_TZpAo-KPHH_K4Ut7tLk])
+▶ [Watch Task-1 demo video on LinkedIn](https://www.linkedin.com/posts/sairupini-chitikesi_internship-webdevelopment-html-activity-7335307659753017345-xRkf?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEwJKiEB2JCMNkw_TZpAo-KPHH_K4Ut7tLk)
 
 
 ## 🧠 What I Learned:
